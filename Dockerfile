@@ -1,4 +1,4 @@
-FROM ubuntu/ubuntu:latest
+FROM ubuntu:latest
 
 # Override the default huggingface cache directory.
 ENV HF_HOME="/runpod-volume/.cache/huggingface/"
