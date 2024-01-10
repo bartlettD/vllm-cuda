@@ -24,7 +24,7 @@ RUN apt-get update --yes && \
     apt-get upgrade --yes && \
 
     apt install --yes --no-install-recommends \
-    RUN apt-get update --yes && \
+    apt-get update --yes && \
     apt-get upgrade --yes && \
 
     # Basic Utilities
@@ -61,7 +61,7 @@ RUN apt-get update --yes && \
     libblas-dev \
     liblapack-dev && \
 
-        # Deep Learning Dependencies and Miscellaneous
+    # Deep Learning Dependencies and Miscellaneous
     apt install --yes --no-install-recommends \
     libatlas-base-dev \
     libffi-dev \
@@ -90,7 +90,7 @@ RUN apt-get update --yes && \
     # Set locale
     echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 
-    # Install pip
+# Install pip
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python3.11 get-pip.py
 
