@@ -23,10 +23,6 @@ WORKDIR /
 RUN apt-get update --yes && \
     apt-get upgrade --yes && \
 
-    apt install --yes --no-install-recommends \
-    apt-get update --yes && \
-    apt-get upgrade --yes && \
-
     # Basic Utilities
     apt install --yes --no-install-recommends \
     bash \
