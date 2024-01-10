@@ -101,5 +101,5 @@ RUN python3.11 -m pip install --upgrade pip
 RUN python3.11 -m pip install virtualenv
 
 # NGINX Proxy
-COPY --from=proxy nginx.conf /etc/nginx/nginx.conf
-COPY --from=proxy readme.html /usr/share/nginx/html/readme.html
+#COPY --from=proxy nginx.conf /etc/nginx/nginx.conf
+#COPY --from=proxy readme.html /usr/share/nginx/html/readme.html
