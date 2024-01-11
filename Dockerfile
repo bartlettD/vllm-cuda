@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:mantic
 
 # Get python
 RUN apt-get update --yes && \
