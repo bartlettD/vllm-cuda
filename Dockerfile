@@ -8,5 +8,5 @@ RUN apt-get update --yes && \
     python3.11 python3.11-dev python3-distutils python3-pip git
 
 # Get torch and xformers
-RUN pip3 install torch --index-url https://download.pytorch.org/whl/cu118 && \
-    pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu118
+RUN pip3 install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cu118 && \
+    pip3 install --no-cache-dir -U xformers --index-url https://download.pytorch.org/whl/cu118
